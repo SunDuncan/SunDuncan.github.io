@@ -10,8 +10,32 @@
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
 <meta name="theme-color" content="#222">
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 
@@ -106,7 +130,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: '博主'
+      author: 'Duncan'
     },
     algolia: {
       applicationID: '',
@@ -126,7 +150,7 @@
 
 
 <!-- 网页加载条 -->
-<script src="https://neveryu.github.io/js/src/pace.min.js"></script>
+<!-- <script src="https://neveryu.github.io/js/src/pace.min.js"></script> -->
 
   <title>归档 | SunDuncan's Blog</title>
   
@@ -515,7 +539,7 @@
         
           
         
-        嗯..! 目前共计 3 篇日志。 继续努力。
+        嗯..! 目前共计 6 篇日志。 继续努力。
       </span>
 
       
@@ -641,9 +665,9 @@
             
               <img class="site-author-image" itemprop="image"
                 src="/uploads/avatar.jpg"
-                alt="情绪化小码农" />
+                alt="情绪化小码农Duncan" />
             
-              <p class="site-author-name" itemprop="name">情绪化小码农</p>
+              <p class="site-author-name" itemprop="name">情绪化小码农Duncan</p>
               <p class="site-description motion-element" itemprop="description">如果一件事你想好了失败率的话，那你就不要做了</p>
           </div>
 
@@ -654,7 +678,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -665,7 +689,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -674,7 +698,7 @@
             
   <div class="site-state-item site-state-tags">
     <a href="/tags/ || tags">
-      <span class="site-state-item-count">2</span>
+      <span class="site-state-item-count">4</span>
       <span class="site-state-item-name">标签</span>
     </a>
   </div>
@@ -730,21 +754,24 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">情绪化小码农</span>
+  <span class="author" itemprop="copyrightHolder">情绪化小码农Duncan</span>
 
   
 </div>
 
+<!--
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
+-->
 
 
   <span class="post-meta-divider">|</span>
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>
+  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>-->
+
 
 
 

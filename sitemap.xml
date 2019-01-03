@@ -2,16 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://sunduncan.github.io/2016/09/30/hexo-next-two/</loc>
+    
+    <lastmod>2019-01-03T14:56:58.190Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sunduncan.github.io/2019/01/03/mood-in-love-01/</loc>
+    
+    <lastmod>2019-01-03T14:53:21.969Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://sunduncan.github.io/2017/10/31/hello-world/</loc>
     
-    <lastmod>2017-11-16T13:50:11.050Z</lastmod>
+    <lastmod>2019-01-03T14:53:09.642Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sunduncan.github.io/2019/01/03/learn-layout-hexo/</loc>
+    
+    <lastmod>2019-01-03T14:51:35.912Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sunduncan.github.io/2016/09/30/hexo-next-three/</loc>
+    
+    <lastmod>2019-01-03T14:36:06.390Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sunduncan.github.io/2017/11/03/hexo-next-one/</loc>
     
-    <lastmod>2017-11-16T13:45:49.974Z</lastmod>
+    <lastmod>2019-01-03T08:27:40.602Z</lastmod>
     
   </url>
   
@@ -40,13 +68,6 @@
     <loc>https://sunduncan.github.io/categories/index.html</loc>
     
     <lastmod>2017-11-03T07:18:22.280Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sunduncan.github.io/2016/09/30/hexo-next-two/</loc>
-    
-    <lastmod>2017-11-03T07:18:22.224Z</lastmod>
     
   </url>
   
