@@ -105,18 +105,18 @@
 
 
 
-<meta name="description" content="AV.initialize(“”, “”); //需要写上leancloud的key   var time=0  var title=””  var url=””  var query = new AV.Query(‘Counter’);//表名  query.notEqualTo(‘id’,0); //id不为0的结果  query.descending(‘time’); //结果按阅读次数降">
+<meta name="description" content="AV.initialize(&quot;r2KGlMSCJXuT8DxCNg5Nvzp7-gzGzoHsz&quot;, &quot;GUBWHgKVJHhD5faoD71ezoDL&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);//表名   query.notEqualTo(&apos;id&apos;,0); //id不为">
 <meta name="keywords" content="count">
 <meta property="og:type" content="article">
 <meta property="og:title" content="count">
 <meta property="og:url" content="https://sunduncan.github.io/2019/01/04/count/index.html">
 <meta property="og:site_name" content="SunDuncan&#39;s Blog">
-<meta property="og:description" content="AV.initialize(“”, “”); //需要写上leancloud的key   var time=0  var title=””  var url=””  var query = new AV.Query(‘Counter’);//表名  query.notEqualTo(‘id’,0); //id不为0的结果  query.descending(‘time’); //结果按阅读次数降">
+<meta property="og:description" content="AV.initialize(&quot;r2KGlMSCJXuT8DxCNg5Nvzp7-gzGzoHsz&quot;, &quot;GUBWHgKVJHhD5faoD71ezoDL&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);//表名   query.notEqualTo(&apos;id&apos;,0); //id不为">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-04T07:07:06.896Z">
+<meta property="og:updated_time" content="2019-01-04T08:11:03.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="count">
-<meta name="twitter:description" content="AV.initialize(“”, “”); //需要写上leancloud的key   var time=0  var title=””  var url=””  var query = new AV.Query(‘Counter’);//表名  query.notEqualTo(‘id’,0); //id不为0的结果  query.descending(‘time’); //结果按阅读次数降">
+<meta name="twitter:description" content="AV.initialize(&quot;r2KGlMSCJXuT8DxCNg5Nvzp7-gzGzoHsz&quot;, &quot;GUBWHgKVJHhD5faoD71ezoDL&quot;);    var time=0   var title=&quot;&quot;   var url=&quot;&quot;   var query = new AV.Query(&apos;Counter&apos;);//表名   query.notEqualTo(&apos;id&apos;,0); //id不为">
 
 
 
@@ -641,7 +641,6 @@
 
           
           
-          
         </div>
       </header>
     
@@ -655,10 +654,31 @@
       
 
       
-        <p><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script></p>
-<p><script>AV.initialize(“”, “”);</script> //需要写上leancloud的key</p>
-<p><script type="text/javascript"><br>  var time=0<br>  var title=””<br>  var url=””<br>  var query = new AV.Query(‘Counter’);//表名<br>  query.notEqualTo(‘id’,0); //id不为0的结果<br>  query.descending(‘time’); //结果按阅读次数降序排序<br>  query.limit(20);  //最终只返回10条结果<br>  query.find().then(function (todo) {<br>    for (var i=0;i&lt;10;i++){<br>      var result=todo[i].attributes;<br>      time=result.time;  //阅读次数<br>      title=result.title; //文章标题<br>      url=result.url;     //文章url<br>      var content=”<p>“+”<font color='#0477ab'>“+”【阅读次数:”+time+”】”+”<a href='"+"http://thief.one"+url+"'>“+title+”</font>“+”</a>“+”</p>“;<br>      // document.write(“<a href='"+"http://thief.one/"+url+"'>“+title+”</a>“+”    Readtimes:”+time+”<br>“);<br>      document.getElementById(“heheda”).innerHTML+=content<br>    }<br>  }, function (error) {<br>    console.log(“error”);<br>  });<br>&lt;/script</p>
-</script></p>
+        <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+<script>AV.initialize("r2KGlMSCJXuT8DxCNg5Nvzp7-gzGzoHsz", "GUBWHgKVJHhD5faoD71ezoDL");</script>
+<script type="text/javascript">
+  var time=0
+  var title=""
+  var url=""
+  var query = new AV.Query('Counter');//表名
+  query.notEqualTo('id',0); //id不为0的结果
+  query.descending('time'); //结果按阅读次数降序排序
+  query.limit(20);  //最终只返回10条结果
+  query.find().then(function (todo) {
+    for (var i=0;i<10;i++){ 
+      var result=todo[i].attributes;
+      time=result.time;  
+      title=result.title; 
+      url=result.url;     
+      var content="<p>"+"<font color='#0477ab'>"+"【阅读次数:"+time+"】"+"<a href='"+"http://thief.one"+url+"'>"+title+"</font>"+"</a>"+"</p>";
+       /*document.write("<a href='"+"http://thief.one/"+url+"'>"+title+"</a>"+"    Readtimes:"+time+"<br>");*/
+
+      document.getElementById("heheda").innerHTML+=content;
+    }
+  }, function (error) {
+    console.log("error");
+  });
+</script>
       
     </div>
     
@@ -934,7 +954,6 @@
     
 
   </div>
-
 
   
 
@@ -1415,5 +1434,7 @@
   <script type="text/javascript" src="/js/src/love.js"></script>
   <script type="text/javascript" src="/js/src/particle.js"></script>
   <script type="text/javascript" src="/js/src/embed.js"></script>
+
+
 </body>
 </html>

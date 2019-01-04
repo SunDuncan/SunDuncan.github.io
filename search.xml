@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[count]]></title>
     <url>%2F2019%2F01%2F04%2Fcount%2F</url>
-    <content type="text"><![CDATA[AV.initialize(“”, “”); //需要写上leancloud的key var time=0 var title=”” var url=”” var query = new AV.Query(‘Counter’);//表名 query.notEqualTo(‘id’,0); //id不为0的结果 query.descending(‘time’); //结果按阅读次数降序排序 query.limit(20); //最终只返回10条结果 query.find().then(function (todo) { for (var i=0;i&lt;10;i++){ var result=todo[i].attributes; time=result.time; //阅读次数 title=result.title; //文章标题 url=result.url; //文章url var content=”“+”“+”【阅读次数:”+time+”】”+”“+title+”“+”“+”“; // document.write(““+title+”“+” Readtimes:”+time+”“); document.getElementById(“heheda”).innerHTML+=content } }, function (error) { console.log(“error”); });&lt;/script]]></content>
+    <content type="text"><![CDATA[AV.initialize("r2KGlMSCJXuT8DxCNg5Nvzp7-gzGzoHsz", "GUBWHgKVJHhD5faoD71ezoDL"); var time=0 var title="" var url="" var query = new AV.Query('Counter');//表名 query.notEqualTo('id',0); //id不为0的结果 query.descending('time'); //结果按阅读次数降序排序 query.limit(20); //最终只返回10条结果 query.find().then(function (todo) { for (var i=0;i]]></content>
       <tags>
         <tag>count</tag>
       </tags>
