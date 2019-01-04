@@ -45,9 +45,9 @@
     <link href="https://sunduncan.github.io/mood-in-love-01.html"/>
     <id>https://sunduncan.github.io/mood-in-love-01.html</id>
     <published>2019-01-03T12:44:01.000Z</published>
-    <updated>2019-01-04T05:35:37.913Z</updated>
+    <updated>2019-01-04T14:45:20.796Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="找回真正的自己"><a href="#找回真正的自己" class="headerlink" title="找回真正的自己"></a>找回真正的自己</h1> <a id="more"></a>]]></content>
+    <content type="html"><![CDATA[<h1 id="找回真正的自己"><a href="#找回真正的自己" class="headerlink" title="找回真正的自己"></a>找回真正的自己</h1> <a id="more"></a><h2 id="满足她下限"><a href="#满足她下限" class="headerlink" title="满足她下限"></a>满足她下限</h2><blockquote><p>&ensp;女生说：给我50块，才和你聊。你愿意吗？ 。。。。我5毛都不给<br>&ensp;你有遇到过，女生对你说一句话，你不知道怎么回应，不知道怎么做。别人对你提一个要求，你不知道该怎么应对?<br>包括女生对你说的话，很多哥们不知道怎么回复。怕说错话，做错事。<br>&ensp;<strong>原因是什么？</strong><br><br>是因为你还不明白一个道理：</p><blockquote><p><strong>在社交里，包括两性关系的交往，60分就是100分，<em>“及格”就是“满分”</em></strong><br>&ensp;你潜意识里默认60分几个是不够的，一定要100分才好。你觉得这么回答，才80分，不行；那个做法才90分，也不行。<br><em>你不知道你在追求的是满足对方的上限，你在追求100分。<br><br><br>社交的回怎么回应对方，是因为你想的是：<strong>我怎么回答，你才会满意。</strong></em><br>也就是，应有上限思维和下限思维：</p><h3 id="上限思维"><a href="#上限思维" class="headerlink" title="上限思维"></a>上限思维</h3><p>怎么回，怎么做，可以满足你？</p><h3 id="下限思维"><a href="#下限思维" class="headerlink" title="下限思维"></a>下限思维</h3><p>只要不侵犯你，怎么会，怎么做都行。<br>你会发现，当你用上限思维去想怎么回应对方的时候，你就是没法知道该怎么回应才好。你不知道说什么，做什么，是再也正常不过的事。因为你不是对方肚子里的蛔虫，你是很难知道到底怎么回应才能满足他/她。但很多哥们，把这个当作自己的一个缺点，认为是自己不会社交，不懂女人，或者能力不够，或者什么恋爱学还没学好。<br><br>&ensp;全是狗屁。<br><br>这种自责只会让你更加自卑，反而在社交和恋爱里碰壁。<br>他们不知道的是：<br>&ensp;&ensp;<strong>在社交里，包括恋爱交往，你只需满足下限就行。</strong><br>就是你只要确保你的回应，无论是说的，还是做的，是不侵犯地方的，不是无礼的。你自己想怎么回应，就怎么回应，都是对的，都是正确的，都是100分。<br>即所谓，在社交中，<strong>60分就是100分。**</strong>即“及格”就是“满分”**。当你用下限思维去想怎么回应对方的时候，你是不会碰到不知道说什么，不知道做什么的问题的。因为就你想怎么说，怎么做都可以，只要不侵犯对方。这样，你就能很自由地表达出自己的意愿和意思。绝大部分人本能地知道什么叫侵犯对方，什么叫无礼，都有这个基本的分辨能力。你只要守住这个下限就行。而按照上限思维，要想怎么回答才能满足对方的话，你就失去了自由，你就要压抑自己的想法和感受。你就要不尊重自己的意愿，也就是不尊重自己。<br>我发现，很多哥们会默认用上限思维，去满足别人，原因很多事因为小时候有一个让你摸不透情绪的父母。你不知道说了什么，做了什么，她就不开心了。她一不开心，孩子你就遭殃。养成习惯了，一定要让对方开心满意，你才觉得自己是安全的。 </p></blockquote></blockquote>]]></content>
     
     <summary type="html">
     
@@ -142,7 +142,7 @@
     <link href="https://sunduncan.github.io/hexo-next-three.html"/>
     <id>https://sunduncan.github.io/hexo-next-three.html</id>
     <published>2016-09-30T14:18:22.000Z</published>
-    <updated>2019-01-04T09:06:46.486Z</updated>
+    <updated>2019-01-04T09:30:35.023Z</updated>
     
     <content type="html"><![CDATA[<p>本篇文章将介绍基于NexT主题下的一些扩展功能的实现。<br>首先，我们需要明白：</p><p id="div-border-left-yellow">在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>  我们约定，将前者称为 <span id="inline-blue">站点配置文件</span>，后者称为 <span id="inline-purple">主题配置文件</span></p><h4 id="1-设置侧栏的位置"><a href="#1-设置侧栏的位置" class="headerlink" title="1.设置侧栏的位置"></a>1.设置侧栏的位置</h4><p>修改 <span id="inline-purple">主题配置文件</span> 中 <code>sidebar.position</code> 的值，支持的选项有：<strong>left</strong> <strong>right</strong><br>目前仅 Pisces Scheme 支持 position 配置，也就是说NexT主题的侧栏位置是不能设置的，设置了也没用，反正都在右边。</p><a id="more"></a><h4 id="2-关于添加居中模块"><a href="#2-关于添加居中模块" class="headerlink" title="2. 关于添加居中模块"></a>2. 关于添加居中模块</h4>]]></content>
     
