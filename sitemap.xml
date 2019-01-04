@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://sunduncan.github.io/count.html</loc>
+    <loc>https://sunduncan.github.io/hexo-next-three.html</loc>
     
-    <lastmod>2019-01-04T08:11:03.519Z</lastmod>
+    <lastmod>2019-01-04T09:06:46.486Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://sunduncan.github.io/learn-layout-hexo.html</loc>
     
-    <lastmod>2019-01-04T07:05:34.330Z</lastmod>
+    <lastmod>2019-01-04T09:06:41.215Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://sunduncan.github.io/count.html</loc>
+    
+    <lastmod>2019-01-04T08:11:03.519Z</lastmod>
     
   </url>
   
@@ -33,13 +40,6 @@
     <loc>https://sunduncan.github.io/hello-world.html</loc>
     
     <lastmod>2019-01-03T14:53:09.642Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://sunduncan.github.io/hexo-next-three.html</loc>
-    
-    <lastmod>2019-01-03T14:36:06.390Z</lastmod>
     
   </url>
   
