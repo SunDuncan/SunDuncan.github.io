@@ -105,18 +105,21 @@
 
 
 
-<meta name="description" content="本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白： 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。  我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置侧栏的位置修改 主题配置文件 中 sid">
+<meta name="description" content="简介Hexo 是一个快速、简洁且高效的静态站点生成框架，它基于 Node.js 。 它有以下特点：  　超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 　支持MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 　一键部署只需一条指令即可部署到Github Pages，或其他">
 <meta name="keywords" content="Hexo,Next">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo-NexT搭建个人博客（三）">
-<meta property="og:url" content="https://sunduncan.github.io/2016/09/30/hexo-next-three/index.html">
+<meta property="og:title" content="Hexo-NexT搭建个人博客（一）">
+<meta property="og:url" content="https://sunduncan.github.io/hexo-next-one.html">
 <meta property="og:site_name" content="SunDuncan&#39;s Blog">
-<meta property="og:description" content="本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白： 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。  我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置侧栏的位置修改 主题配置文件 中 sid">
+<meta property="og:description" content="简介Hexo 是一个快速、简洁且高效的静态站点生成框架，它基于 Node.js 。 它有以下特点：  　超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 　支持MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 　一键部署只需一条指令即可部署到Github Pages，或其他">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-03T14:36:06.390Z">
+<meta property="og:image" content="http://p1.bqimg.com/567571/27324b740c9e91e2.png">
+<meta property="og:image" content="http://p1.bqimg.com/567571/8333728b5eaab526.png">
+<meta property="og:updated_time" content="2019-01-03T08:27:40.602Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo-NexT搭建个人博客（三）">
-<meta name="twitter:description" content="本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白： 在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。  我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置侧栏的位置修改 主题配置文件 中 sid">
+<meta name="twitter:title" content="Hexo-NexT搭建个人博客（一）">
+<meta name="twitter:description" content="简介Hexo 是一个快速、简洁且高效的静态站点生成框架，它基于 Node.js 。 它有以下特点：  　超快速度Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。 　支持MarkdownHexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。 　一键部署只需一条指令即可部署到Github Pages，或其他">
+<meta name="twitter:image" content="http://p1.bqimg.com/567571/27324b740c9e91e2.png">
 
 
 
@@ -146,7 +149,7 @@
 
 
 
-  <link rel="canonical" href="https://sunduncan.github.io/2016/09/30/hexo-next-three/"/>
+  <link rel="canonical" href="https://sunduncan.github.io/hexo-next-one.html"/>
 
 
 
@@ -154,7 +157,7 @@
 <!-- 网页加载条 -->
 <!-- <script src="https://neveryu.github.io/js/src/pace.min.js"></script> -->
 
-  <title>Hexo-NexT搭建个人博客（三） | SunDuncan's Blog</title>
+  <title>Hexo-NexT搭建个人博客（一） | SunDuncan's Blog</title>
   
 
 
@@ -576,7 +579,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://sunduncan.github.io/2016/09/30/hexo-next-three/">
+    <link itemprop="mainEntityOfPage" href="https://sunduncan.github.io/hexo-next-one.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="情绪化小码农Duncan">
@@ -593,7 +596,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo-NexT搭建个人博客（三）</h1>
+          <h1 class="post-title" itemprop="name headline">Hexo-NexT搭建个人博客（一）</h1>
         
 
         <div class="post-meta">
@@ -605,8 +608,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-09-30T22:18:22+08:00">
-                2016-09-30
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-03T17:36:20+08:00">
+                2017-11-03
               </time>
             
 
@@ -646,9 +649,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/09/30/hexo-next-three/#comments" itemprop="discussionUrl">
+                <a href="/hexo-next-one.html#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2016/09/30/hexo-next-three/" itemprop="commentCount"></span>
+                        data-disqus-identifier="hexo-next-one.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -676,12 +679,61 @@
       
 
       
-        <p>本篇文章将介绍基于NexT主题下的一些扩展功能的实现。<br>首先，我们需要明白：</p>
+        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁且高效的静态站点生成框架，它基于 <a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a> 。 它有以下特点：</p>
+<ul>
+<li><i class="fa fa-bolt"></i><h6 style="display: inline;">　超快速度</h6><br><i>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</i></li>
+<li><i class="fa fa-pencil"></i><h6 style="display: inline;">　支持Markdown</h6><br><i>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</i></li>
+<li><i class="fa fa-cloud-upload"></i><h6 style="display: inline;">　一键部署</h6><br><i>只需一条指令即可部署到Github Pages，或其他网站</i></li>
+<li><i class="fa fa-cog"></i><h6 style="display: inline;">　丰富的插件</h6><br><i>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</i></li>
+</ul>
+<p>通过 Hexo 你可以轻松地使用 Markdown 编写文章，除了 Markdown 本身的语法之外，还可以使用 Hexo 提供的 <a href="https://hexo.io/zh-cn/docs/tag-plugins.html" target="_blank" rel="external">标签插件</a> 来快速的插入特定形式的内容。</p>
+<p>基于 Hexo 这个优秀的博客框架，很多优秀的开发者奉献出了它们基于 Hexo 开发的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a>。<br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 因其 <span id="yu-1">精于心，简于形</span> 的风格，一直被广大用户所喜爱。</p>
+<a id="more"></a>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装 Hexo 只需几分钟时间，若你在安装过程中遇到问题或无法找到解决方式，请<a href="https://neveryu.github.io/guestbook/" target="_blank" rel="external">提交问题</a>，我会尽力解决你的问题。</p>
+<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序:</p>
+<blockquote>
+<p><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a><br><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></p>
+</blockquote>
+<p>如果您的电脑中已经安装上述必备程序，那么恭喜你！接下来只需要使用 npm 即可完成 Hexo 的安装。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>如果你的电脑中尚未安装所需要的程序，请根据以下安装指示完成安装。</p>
+<h2 id="安装-Git"><a href="#安装-Git" class="headerlink" title="安装 Git"></a>安装 Git</h2><ul>
+<li>Windows：下载安装 git 。<a id="download" href="https://git-scm.com/download/win" target="_blank" rel="external"><i class="fa fa-download"></i><span> Download Now</span><br></a></li>
+<li>Mac：使用 <a href="http://mxcl.github.com/homebrew/" target="_blank" rel="external">Homebrew</a>，<a href="http://www.macports.org/" target="_blank" rel="external">MacPorts</a> 或下载 <a href="http://sourceforge.net/projects/git-osx-installer/" target="_blank" rel="external">安装程序</a> 安装</li>
+<li>Linux（Ubuntu，Debian）：<code>sudo apt-get install git-core</code></li>
+<li>Linux（Fedora，Red Hat，CentOS）：<code>sudo yum install git-core</code></li>
+</ul>
+<h2 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h2><p>安装 Node.js 的最佳方式是使用 <a href="https://github.com/creationix/nvm" target="_blank" rel="external">nvm</a>。（nvm：Node Version Manager）<br>windows 下使用 nvm 请看这里： <a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">nvm-windows</a> ，首先需要下载安装 nvm 。<a id="download" href="https://github.com/coreybutler/nvm-windows/releases" target="_blank" rel="external"><i class="fa fa-download"></i><span> Download Now</span><br></a><br>windows下安装完nvm以后，我们可以打开命令行中执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ nvm</div><div class="line">$ nvm install latest</div></pre></td></tr></table></figure></p>
+<p>执行完以后，重启命令行，执行命令 <code>node -v</code> ，如果出现版本号，那么 <code>Node.js</code> 就安装成功了。</p>
+<p id="div-border-left-red">如果没有安装成功，那可能就是墙的原因。建议下载 <code>Node.js</code> 直接安装。<a id="download" href="https://nodejs.org/en/download/" target="_blank" rel="external"><i class="fa fa-download"></i><span> Download Now</span><br></a> </p>
+
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>有了 Node.js ，我们可以使用 npm 安装 Hexo。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
+<p>安装 Hexo 完成后，我们首先需要为我们的项目创建一个<span id="inline-green">指定文件夹</span>（例如我在 D 盘目录下创建了一个文件夹 blog 。<code>D:\blog</code> ），在指定文件夹中执行下列命令， Hexo 将会在指定文件夹中新建所需要的文件。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init</div></pre></td></tr></table></figure></p>
+<p>等待安装，安装完成后，<span id="inline-green">指定文件夹</span> 的目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">.</div><div class="line">├── _config.yml</div><div class="line">├── package.json</div><div class="line">├── scaffolds</div><div class="line">├── source</div><div class="line">|   ├── _drafts</div><div class="line">|   └── _posts</div><div class="line">└──</div></pre></td></tr></table></figure></p>
+<p>我们继续执行命令<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo g</div><div class="line">$ hexo s --debug</div></pre></td></tr></table></figure></p>
+<p>Hexo 将 source 文件夹中除 <em>posts 文件夹之外，开头命名为 </em>(下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件夹会被拷贝过去。<br>这个时候，我们在浏览器中访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，就可以看到基于 Hexo 的默认主题的原型：<br><img src="http://p1.bqimg.com/567571/27324b740c9e91e2.png" alt="hexo-next-one-1"></p>
+<h2 id="安装-NexT-主题"><a href="#安装-NexT-主题" class="headerlink" title="安装 NexT 主题"></a>安装 NexT 主题</h2><h3 id="下载-NexT-主题"><a href="#下载-NexT-主题" class="headerlink" title="下载 NexT 主题"></a>下载 NexT 主题</h3><p>依旧是在当前目录下，使用 Git checkout 代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> https://github.com/iissnan/hexo-theme-next themes/next</div></pre></td></tr></table></figure></p>
+<p>等待下载完成。</p>
 <p id="div-border-left-yellow">在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo 本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>  我们约定，将前者称为 <span id="inline-blue">站点配置文件</span>，后者称为 <span id="inline-purple">主题配置文件</span></p>
 
-<h4 id="1-设置侧栏的位置"><a href="#1-设置侧栏的位置" class="headerlink" title="1.设置侧栏的位置"></a>1.设置侧栏的位置</h4><p>修改 <span id="inline-purple">主题配置文件</span> 中 <code>sidebar.position</code> 的值，支持的选项有：<strong>left</strong> <strong>right</strong><br>目前仅 Pisces Scheme 支持 position 配置，也就是说NexT主题的侧栏位置是不能设置的，设置了也没用，反正都在右边。</p>
-<a id="more"></a>
-<h4 id="2-关于添加居中模块"><a href="#2-关于添加居中模块" class="headerlink" title="2. 关于添加居中模块"></a>2. 关于添加居中模块</h4>
+<h3 id="启用-NexT-主题"><a href="#启用-NexT-主题" class="headerlink" title="启用 NexT 主题"></a>启用 NexT 主题</h3><p>打开 <span id="inline-blue">站点配置文件</span> ，找到 theme 字段，并将其值更改为 next 。<br>到此， NexT 主题安装完成。下一步我们将验证主题是否正确启用。在切换主题之后、验证之前，我们最好使用 <code>hexo clean</code> 来清除 Hexo 的缓存。</p>
+<h3 id="验证主题"><a href="#验证主题" class="headerlink" title="验证主题"></a>验证主题</h3><p>首先启动 Hexo 本地站点，并开启调试模式（即加上 <code>--debug</code>），整个命令是 <code>hexo s --debug</code>。在服务启动的过程，注意观察命令行输出是否有任何异常信息。当命令行输出中提示：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">INFO  Hexo is running at http://0.0.0.0:4000/. Press Ctrl+C to stop.</div></pre></td></tr></table></figure>
+<p>此时即可使用浏览器访问 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> ，检查站点是否正确运行。</p>
+<p id="div-border-left-green">当你看到站点的外观与下图所示类似时即说明你已成功安装 NexT 主题。这是 NexT 默认的 Scheme —— Muse</p><br><img src="http://p1.bqimg.com/567571/8333728b5eaab526.png" alt="hexo-next-one-1"><br>现在，我们已经成功安装并启用了 NexT 主题。<br><br><p id="div-border-top-blue">关于更多基本操作和基础知识，请查阅 <a href="https://hexo.io/zh-cn/" target="_blank" rel="external">Hexo</a> 与 <a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT</a> 官方文档.</p>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><h2 id="本地调试步骤"><a href="#本地调试步骤" class="headerlink" title="本地调试步骤"></a>本地调试步骤</h2><p>三部曲：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo s --debug</div></pre></td></tr></table></figure></p>
+<p>这种带 debug 的运行，如果出现错误，可以在命令行中看到错误提示信息。</p>
+<h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><p>三部曲：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
+<p>当然在部署之前，需要先配置好配置文件中的 deploy。</p>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"postName"</span>  <span class="comment">#新建文章</span></div><div class="line">$ hexo new page <span class="string">"pageName"</span> <span class="comment"># 新建页面</span></div><div class="line">$ hexo generate <span class="comment"># 生成静态页面至public目录</span></div><div class="line">$ hexo server <span class="comment"># 开启预览访问端口(默认端口4000，'ctrl+c'关闭server)</span></div><div class="line">$ hexo deploy <span class="comment"># 项目部署</span></div><div class="line">$ hexo <span class="built_in">help</span> <span class="comment"># 查看帮助</span></div><div class="line">$ hexo version <span class="comment"># 查看Hexo的版本</span></div></pre></td></tr></table></figure>
+<h2 id="简写命令"><a href="#简写命令" class="headerlink" title="简写命令"></a>简写命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">$ hexo new == hexo n</div><div class="line">$ hexo generate == hexo g</div><div class="line">$ hexo server == hexo s</div><div class="line">$ hexo deploy == hexo d</div></pre></td></tr></table></figure>
+<h2 id="常见问题1"><a href="#常见问题1" class="headerlink" title="常见问题1"></a>常见问题1</h2><p>在 hexo 的配置和设置文件中，在冒号后面没留空格会导致出问题：<br>错误的设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">author:SunDuncan</div><div class="line">email:sunmaoyunduncan@gmail.com</div><div class="line">language:zh-CN</div></pre></td></tr></table></figure></p>
+<p>正确的设置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">author: SunDuncan</div><div class="line">email: sunmaoyunduncan@gmail.com</div><div class="line">language: zh-CN</div></pre></td></tr></table></figure></p>
+<h2 id="常见问题2"><a href="#常见问题2" class="headerlink" title="常见问题2"></a>常见问题2</h2><p>关于 Git 提交中用户名和 Email 的设置<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">git config --global user.name &quot;Your name&quot;</div><div class="line">git config --global user.email &quot;Your email&quot;</div></pre></td></tr></table></figure></p>
+<h2 id="常见问题3"><a href="#常见问题3" class="headerlink" title="常见问题3"></a>常见问题3</h2><p>Hexo 中的图标使用的是 <a href="http://fontawesome.io/" target="_blank" rel="external">Font Awesome</a> ，所以，我们的博客已经自带了 Font Awesome 中的所有图标，基本可以满足我们的所有需求，我们可以去 Font Awesome 中查找我们想要使用的图标。<br><i class="fa fa-github"></i> <code>&lt;i class=&quot;fa fa-github&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-github fa-lg"></i> <code>&lt;i class=&quot;fa fa-github fa-lg&quot;&gt;&lt;/i&gt;</code><br><i class="fa fa-github fa-2x"></i> <code>&lt;i class=&quot;fa fa-github fa-2x&quot;&gt;&lt;/i&gt;</code></p>
+<p></p><h5 style="color:#f63;"><i>最后要说的是：</i></h5><p></p>
+<p id="div-border-top-green"><i><a href="https://github.com/SunDuncan/SunDuncan.github.io" target="_blank" rel="external">博客源码</a> ， 欢迎 star<br></i></p>
+
       
     </div>
     
@@ -742,8 +794,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/30/hexo-next-two/" rel="next" title="Hexo-NexT搭建个人博客（二）">
-                <i class="fa fa-chevron-left"></i> Hexo-NexT搭建个人博客（二）
+              <a href="/hello-world.html" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
               </a>
             
           </div>
@@ -752,8 +804,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/31/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/learn-layout-hexo.html" rel="prev" title="学习hexo的布局">
+                学习hexo的布局 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -889,7 +941,7 @@
           
           
             <div class="cc-license motion-element" itemprop="license">
-              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank">
+              <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" class="cc-opacity" target="_blank" rel="external nofollow">
                 <img src="/images/cc-by-nc-nd.svg" alt="Creative Commons" />
               </a>
             </div>
@@ -913,7 +965,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-设置侧栏的位置"><span class="nav-number">1.</span> <span class="nav-text">1.设置侧栏的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-关于添加居中模块"><span class="nav-number">2.</span> <span class="nav-text">2. 关于添加居中模块</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.0.0.1.</span> <span class="nav-text">　超快速度</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.0.0.2.</span> <span class="nav-text">　支持Markdown</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.0.0.3.</span> <span class="nav-text">　一键部署</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">1.0.0.0.0.4.</span> <span class="nav-text">　丰富的插件</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装前提"><span class="nav-number">2.1.</span> <span class="nav-text">安装前提</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Git"><span class="nav-number">2.2.</span> <span class="nav-text">安装 Git</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Node-js"><span class="nav-number">2.3.</span> <span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-Hexo"><span class="nav-number">2.4.</span> <span class="nav-text">安装 Hexo</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装-NexT-主题"><span class="nav-number">2.5.</span> <span class="nav-text">安装 NexT 主题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载-NexT-主题"><span class="nav-number">2.5.1.</span> <span class="nav-text">下载 NexT 主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#启用-NexT-主题"><span class="nav-number">2.5.2.</span> <span class="nav-text">启用 NexT 主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#验证主题"><span class="nav-number">2.5.3.</span> <span class="nav-text">验证主题</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地调试步骤"><span class="nav-number">3.1.</span> <span class="nav-text">本地调试步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署步骤"><span class="nav-number">3.2.</span> <span class="nav-text">部署步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常用命令"><span class="nav-number">3.3.</span> <span class="nav-text">常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简写命令"><span class="nav-number">3.4.</span> <span class="nav-text">简写命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题1"><span class="nav-number">3.5.</span> <span class="nav-text">常见问题1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题2"><span class="nav-number">3.6.</span> <span class="nav-text">常见问题2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#常见问题3"><span class="nav-number">3.7.</span> <span class="nav-text">常见问题3</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#undefined"><span class="nav-number">3.7.0.0.1.</span> <span class="nav-text">最后要说的是：</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div>
             
 
           </div>
@@ -946,7 +998,7 @@
 
 <!--
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io" rel="external nofollow">Hexo</a> 强力驱动</div>
 
 -->
 
@@ -955,7 +1007,7 @@
 
 
 
-  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.3</div>-->
+  <!--<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next" rel="external nofollow">NexT.Gemini</a> v5.1.3</div>-->
 
 
 <span id="busuanzi_container_site_pv">
@@ -1093,9 +1145,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'https://sunduncan.github.io/2016/09/30/hexo-next-three/';
-          this.page.identifier = '2016/09/30/hexo-next-three/';
-          this.page.title = 'Hexo-NexT搭建个人博客（三）';
+          this.page.url = 'https://sunduncan.github.io/hexo-next-one.html';
+          this.page.identifier = 'hexo-next-one.html';
+          this.page.title = 'Hexo-NexT搭建个人博客（一）';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://sunduncan.disqus.com/embed.js';
