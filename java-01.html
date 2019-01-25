@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="SunDuncan&#39;s Blog">
 <meta property="og:description" content="java练习题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-09T02:50:02.053Z">
+<meta property="og:updated_time" content="2019-01-17T06:57:22.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java-01">
 <meta name="twitter:description" content="java练习题">
@@ -704,6 +704,7 @@
 <p>josephu 问题为： 设编号为1，2，3,……n的n个人围坐一圈，约定编号为k（1&lt;=k&lt;=n）的人从1开始报数，数到m的那个人出列，它的下一位又从1开始报数，<br>数到m的那个人又出列，依次类推，直到所有热出列为止，由此产生一个出对编号的序列。<br>    提示：用一个不带头节点的循环链表来处理josephu问题：先构成一个有n个节点的单循环链表，然后由k结点起从1开始计数，计到m时，对应结点从链表<br>中删除，然后再从被删除节点的下一个结点又从1开始计数，直到最后一个结点从链表中删除算法结束。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div></pre></td><td class="code"><pre><div class="line">public class Josophe &#123;</div><div class="line"></div><div class="line">	public static void main(String[] args) &#123;</div><div class="line">		// TODO Auto-generated method stub</div><div class="line">		CycleList cyc = new CycleList();</div><div class="line">		cyc.setLength(5);</div><div class="line">		cyc.createList();</div><div class="line">		cyc.setK(2);</div><div class="line">		cyc.setM(2);</div><div class="line">		cyc.show();</div><div class="line">		cyc.play();	</div><div class="line">	&#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">//定义一个孩子节点</div><div class="line">class Child&#123;</div><div class="line">	int no;//编号</div><div class="line">	Child nextChild;</div><div class="line">	public Child(int i) &#123;</div><div class="line">		no = i;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">//定义一个单循环链表</div><div class="line">class CycleList&#123;</div><div class="line">	int length;</div><div class="line">	Child first_child;</div><div class="line">	int m;//读几下</div><div class="line">	int k; //从第几个开始读</div><div class="line">	public void setM(int m) &#123;</div><div class="line">		this.m = m;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void setK(int k) &#123;</div><div class="line">		this.k = k;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void setLength(int length) &#123;</div><div class="line">		this.length = length;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void createList() &#123;</div><div class="line">		first_child = new Child(1);</div><div class="line">		//龙套角色</div><div class="line">		Child temp = first_child;		</div><div class="line">		for (int i = 0;i &lt; length - 1; ++i) &#123;</div><div class="line">			Child ch = new Child(i + 2);//从2号开始</div><div class="line">			temp.nextChild = ch;</div><div class="line">			temp = ch;</div><div class="line">		&#125;</div><div class="line">		temp.nextChild = first_child;</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	public void play() &#123;</div><div class="line">		//先找到第一个孩子</div><div class="line">		Child temp = first_child;</div><div class="line">		Child temp2;//找出退出的孩子的上一个结点</div><div class="line">		while (this.length != 1) &#123;</div><div class="line">			//找到第k个孩子，开始报数</div><div class="line">			for (int i = 1; i &lt; k; ++i) &#123;</div><div class="line">				temp = temp.nextChild;</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">			//报到第m个孩子退出链表</div><div class="line">			for (int i = 1;i &lt; m; ++i) &#123;</div><div class="line">				temp = temp.nextChild;</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">			temp2 = temp.nextChild;</div><div class="line">			while (temp2.nextChild != temp) &#123;</div><div class="line">				temp2 = temp2.nextChild;</div><div class="line">			&#125;</div><div class="line">			</div><div class="line">			temp2.nextChild = temp.nextChild;</div><div class="line">			temp = temp.nextChild;</div><div class="line">			this.length--;</div><div class="line">		&#125;</div><div class="line">		</div><div class="line">		System.out.println(&quot;最后一个出来的是：&quot; + temp.no);</div><div class="line">	&#125;</div><div class="line">	</div><div class="line">	</div><div class="line">	public void show() &#123;</div><div class="line">		Child temp = first_child;</div><div class="line">		for (int i = 0; i &lt; length; ++i) &#123;		</div><div class="line">			System.out.println(temp.no);</div><div class="line">			temp = temp.nextChild;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
       
     </div>
     
@@ -771,6 +772,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/mood-in-love-03.html" rel="prev" title="mood-in-love-03">
+                mood-in-love-03 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -861,7 +866,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">12</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -872,7 +877,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -881,7 +886,7 @@
             
   <div class="site-state-item site-state-tags">
     <a href="/tags/ || tags">
-      <span class="site-state-item-count">6</span>
+      <span class="site-state-item-count">8</span>
       <span class="site-state-item-name">标签</span>
     </a>
   </div>
